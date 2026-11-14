@@ -1,0 +1,30 @@
+# ==========================================
+# OPSEC - BLOQUEIO DE IMAGENS COM VAZAMENTO DE IP
+# ==========================================
+
+# Vídeos Pesados
+*.mp4
+
+# Pasta 01 - SysAdmin
+01_config_ip.jpeg
+02_ufw_firewall.jpeg
+03_regras_firewall.jpeg
+05_instala_zerotier.jpeg
+06_painel_zerotier.jpeg
+Instalação do Debian-2.jpg
+
+# Pasta 02 - Apache
+01-apache.jpeg
+02-apache.jpeg
+11-site-ficha-tecnica-cliente1.jpg
+12-site-ficha-tecnica-cliente2-zerotier.jpg
+13-teste-modificacao-pagina-validado-qa.png
+14-teste-modificacao-pagina-restaurado.png
+
+# Pasta 05 - SecOps
+01-apt-update.jpg
+09-grep-ips-bash-history.jpg
+10-tail-access-error-log-reais.jpg
+15-ss-tulpn-porta-80-listen.jpeg
+16-ufw-status-verbose-ss-tulpn.png
+19-auditoria-zerotier-who-access-log.jpg

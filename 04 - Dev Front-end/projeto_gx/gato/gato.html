@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gatos — Toca &amp; Cia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/gato/gato.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/index.html" class="brand">Toca <span>&amp;</span> Cia</a>
+  <nav class="mainnav">
+    <a href="/index.html">Início</a>
+    <a href="/cão/cao.html">Cães</a>
+    <a href="/gato/gato.html" class="active">Gatos</a>
+    <a href="/aves/aves.html">Aves</a>
+    <a href="/coelho/coelho.html">Coelhos</a>
+  </nav>
+  <button class="navtoggle" id="navToggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main>
+  <section class="banner">
+    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1400&q=80" alt="Gato cinza deitado olhando para a câmera">
+    <div class="banner-texto">
+      <p class="kicker">Espécie</p>
+      <h1>Gatos</h1>
+      <p>Independentes, curiosos e cheios de personalidade — cada gato pede um jeito diferente de cuidado.</p>
+    </div>
+  </section>
+
+  <section class="conteudo">
+    <div class="coluna-texto">
+      <h2>Cuidados essenciais</h2>
+      <ul class="lista-cuidados">
+        <li><strong>Caixa de areia limpa.</strong> Limpar diariamente; gato evita caixa suja.</li>
+        <li><strong>Arranhador disponível.</strong> Poupa móveis e afia as unhas naturalmente.</li>
+        <li><strong>Água fora do prato de comida.</strong> Gatos preferem fontes de água separadas.</li>
+        <li><strong>Ambiente enriquecido.</strong> Prateleiras e brinquedos ajudam a gastar energia.</li>
+        <li><strong>Visitas ao veterinário.</strong> Check-up anual mesmo sem sintomas aparentes.</li>
+      </ul>
+    </div>
+    <div class="coluna-galeria">
+      <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=500&q=80" alt="Gato filhote brincando">
+      <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=500&q=80" alt="Gato preto sentado">
+    </div>
+  </section>
+
+  <section class="ferramenta">
+    <h2>Qual é a personalidade do seu gato?</h2>
+    <p class="ferramenta-lead">Três perguntas rápidas para entender melhor o temperamento do seu bicho e como se relacionar com ele.</p>
+
+    <div class="quiz-card" id="quizGato">
+      <div class="pergunta" data-step="0">
+        <p class="pergunta-texto">Quando chega visita em casa, seu gato costuma:</p>
+        <div class="opcoes">
+          <button data-pontos="cacador">Observar escondido, atento a tudo</button>
+          <button data-pontos="social">Ir cumprimentar na hora</button>
+          <button data-pontos="tranquilo">Continuar dormindo</button>
+        </div>
+      </div>
+      <div class="pergunta" data-step="1" hidden>
+        <p class="pergunta-texto">O brinquedo favorito dele é:</p>
+        <div class="opcoes">
+          <button data-pontos="cacador">Algo que se mexe rápido, tipo pena ou laser</button>
+          <button data-pontos="social">Brincar com você, não com o objeto</button>
+          <button data-pontos="tranquilo">Uma caixa de papelão pra descansar dentro</button>
+        </div>
+      </div>
+      <div class="pergunta" data-step="2" hidden>
+        <p class="pergunta-texto">De manhã, ele geralmente:</p>
+        <div class="opcoes">
+          <button data-pontos="cacador">Já está caçando alguma coisa pela casa</button>
+          <button data-pontos="social">Vem pedir carinho e atenção</button>
+          <button data-pontos="tranquilo">Ainda está no maior sono</button>
+        </div>
+      </div>
+      <div class="resultado" id="resultadoGato" hidden>
+        <p class="resultado-label">Perfil identificado</p>
+        <h3 id="tituloResultadoGato"></h3>
+        <p id="textoResultadoGato"></p>
+        <button class="btn btn-ghost" id="refazerGato">Refazer teste</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="proxima">
+    <p>Conhece alguém com cão, ave ou coelho?</p>
+    <div class="proxima-links">
+      <a href="/cão/cao.html">Ver página dos cães →</a>
+      <a href="/aves/aves.html">Ver página das aves →</a>
+      <a href="/coelho/coelho.html">Ver página dos coelhos →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="rodape-col">
+    <p class="brand-footer">Toca &amp; Cia</p>
+    <p>Rua das Acácias, 214 — Centro</p>
+    <p>Seg. a sáb., 9h às 19h</p>
+  </div>
+  <div class="rodape-col">
+    <p>Páginas</p>
+    <a href="/index.html">Início</a>
+    <a href="/cão/cao.html">Cães</a>
+    <a href="/aves/aves.html">Aves</a>
+    <a href="/coelho/coelho.html">Coelhos</a>
+  </div>
+</footer>
+
+<script src="/gato/gato.js"></script>
+</body>
+</html>
+

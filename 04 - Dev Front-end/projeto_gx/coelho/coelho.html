@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coelhos — Toca &amp; Cia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/coelho/coelho.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/index.html" class="brand">Toca <span>&amp;</span> Cia</a>
+  <nav class="mainnav">
+    <a href="/index.html">Início</a>
+    <a href="/cão/cao.html">Cães</a>
+    <a href="/gato/gato.html">Gatos</a>
+    <a href="/aves/aves.html">Aves</a>
+    <a href="/coelho/coelho.html" class="active">Coelhos</a>
+  </nav>
+  <button class="navtoggle" id="navToggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main>
+  <section class="banner">
+    <img src="/fotos/coelho2.png" alt="Coelho de estimação sentado na grama">
+    <div class="banner-texto">
+      <p class="kicker">Espécie</p>
+      <h1>Coelhos</h1>
+      <p>Quietos, caseiros e curiosos — os cuidados mudam bastante entre o filhote, o adulto e o coelho idoso.</p>
+    </div>
+  </section>
+
+  <section class="conteudo">
+    <div class="coluna-texto">
+      <h2>Cuidados essenciais</h2>
+      <ul class="lista-cuidados">
+        <li><strong>Feno à vontade.</strong> Deve ser a base da alimentação, disponível o dia todo.</li>
+        <li><strong>Espaço para pular.</strong> Gaiola grande ou área cercada fora dela, todos os dias.</li>
+        <li><strong>Dentes sempre em uso.</strong> Feno e brinquedos de roer evitam crescimento excessivo dos dentes.</li>
+        <li><strong>Manuseio com cuidado.</strong> Sempre apoiando o corpo e as patas traseiras.</li>
+        <li><strong>Ambiente fresco.</strong> Coelhos sofrem bastante com calor; evite sol direto.</li>
+      </ul>
+    </div>
+    <div class="coluna-galeria">
+      <img src="/fotos/coelho3.png" alt="Coelho branco e marrom deitado">
+      <img src="/fotos/coelho4.png" alt="Coelho filhote fofo">
+    </div>
+  </section>
+
+  <section class="ferramenta">
+    <h2>Cuidados por idade</h2>
+    <p class="ferramenta-lead">Escolha a fase de vida do seu coelho e veja o que muda na rotina de cuidados.</p>
+
+    <div class="idade-card">
+      <div class="idade-tabs" id="idadeTabs">
+        <button class="idade-tab ativo" data-idade="filhote">Filhote</button>
+        <button class="idade-tab" data-idade="adulto">Adulto</button>
+        <button class="idade-tab" data-idade="idoso">Idoso</button>
+      </div>
+      <div class="idade-conteudo" id="idadeConteudo"></div>
+    </div>
+  </section>
+
+  <section class="proxima">
+    <p>Conhece alguém com cão, gato ou ave?</p>
+    <div class="proxima-links">
+      <a href="/index.html">Ver página inicial</a>
+      <a href="/cão/cao.html">Ver página dos cães →</a>
+      <a href="/gato/gato.html">Ver página dos gatos →</a>
+      <a href="/aves/aves.html">Ver página das aves →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="rodape-col">
+    <p class="brand-footer">Toca &amp; Cia</p>
+    <p>Rua das Acácias, 214 — Centro</p>
+    <p>Seg. a sáb., 9h às 19h</p>
+  </div>
+  <div class="rodape-col">
+    <p>Páginas</p>
+    <a href="/index.html">Início</a>
+    <a href="/cão/cao.html">Cães</a>
+    <a href="/gato/gato.html">Gatos</a>
+    <a href="/aves/aves.html">Aves</a>
+  </div>
+</footer>
+
+<script src="/coelho/coelho.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cães — Toca &amp; Cia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cão/cao.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/index.html" class="brand">Toca <span>&amp;</span> Cia</a>
+  <nav class="mainnav">
+    <a href="/index.html">Início</a>
+    <a href="/cão/cao.html" class="active">Cães</a>
+    <a href="/gato/gato.html">Gatos</a>
+    <a href="/aves/aves.html">Aves</a>
+    <a href="/coelho/coelho.html">Coelhos</a>
+  </nav>
+  <button class="navtoggle" id="navToggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main>
+  <section class="banner">
+    <img src="/fotos/filhocao.png" alt="Cachorro golden retriever sorrindo ao ar livre">
+    <div class="banner-texto">
+      <p class="kicker">Espécie</p>
+      <h1>Cães</h1>
+      <p>De vira-latas a raças de pequeno porte: ração certa, escovação e um passeio por dia fazem toda diferença.</p>
+    </div>
+  </section>
+
+  <section class="conteudo">
+    <div class="coluna-texto">
+      <h2>Cuidados essenciais</h2>
+      <ul class="lista-cuidados">
+        <li><strong>Alimentação por porte.</strong> Filhotes comem mais vezes ao dia; cães adultos, geralmente duas refeições.</li>
+        <li><strong>Água sempre limpa.</strong> Trocar o pote pelo menos duas vezes ao dia.</li>
+        <li><strong>Passeio diário.</strong> Além do xixi, o passeio gasta energia e evita ansiedade.</li>
+        <li><strong>Escovação regular.</strong> Reduz queda de pelo e evita nós, principalmente em raças de pelo longo.</li>
+        <li><strong>Check-up veterinário.</strong> Vacinas em dia e vermifugação a cada três a seis meses.</li>
+      </ul>
+    </div>
+
+    <div class="coluna-galeria">
+      <img src="/fotos/cão23.png" alt="Cachorro correndo no parque">
+      <img src="/fotos/cao2.png" alt="Cachorro filhote deitado">
+    </div>
+  </section>
+
+  <section class="ferramenta">
+    <h2>Calculadora de porção diária</h2>
+    <p class="ferramenta-lead">Uma estimativa simples de quanto oferecer por dia, dividida nas refeições. Sempre confira a embalagem da ração e o veterinário para o valor exato.</p>
+
+    <div class="calc-card">
+      <div class="calc-linha">
+        <label for="peso">Peso do cão (kg)</label>
+        <input type="number" id="peso" min="1" max="90" step="0.5" placeholder="ex.: 12">
+      </div>
+      <div class="calc-linha">
+        <label for="fase">Fase de vida</label>
+        <select id="fase">
+          <option value="filhote">Filhote (até 1 ano)</option>
+          <option value="adulto" selected>Adulto</option>
+          <option value="idoso">Idoso (7+ anos)</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" id="calcularBtn">Calcular porção</button>
+
+      <div class="calc-resultado" id="calcResultado" hidden>
+        <p class="resultado-numero"><span id="gramasDia">0</span> g por dia</p>
+        <p class="resultado-detalhe" id="detalheRefeicoes"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="proxima">
+    <p>Conhece alguém com gato, ave ou coelho?</p>
+    <div class="proxima-links">
+      <a href="/gato/gato.html">Ver página dos gatos →</a>
+      <a href="/aves/aves.html">Ver página das aves →</a>
+      <a href="/coelho/coelho.html">Ver página dos coelhos →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="rodape-col">
+    <p class="brand-footer">Toca &amp; Cia</p>
+    <p>Rua das Acácias, 214 — Centro</p>
+    <p>Seg. a sáb., 9h às 19h</p>
+  </div>
+  <div class="rodape-col">
+    <p>Páginas</p>
+    <a href="/index.html">Início</a>
+    <a href="/gato/gato.html">Gatos</a>
+    <a href="/aves/aves.html">Aves</a>
+    <a href="/coelho/coelho.html">Coelhos</a>
+  </div>
+</footer>
+
+<script src="/cão/cao.js"></script>
+</body>
+</html>
+

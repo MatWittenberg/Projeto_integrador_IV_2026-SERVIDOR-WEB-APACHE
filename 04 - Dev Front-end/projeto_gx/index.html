@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toca &amp; Cia — Petshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/index.html" class="brand">Toca <span>&amp;</span> Cia</a>
+  <nav class="mainnav">
+    <a href="/index.html" class="active">Início</a>
+    <a href="/cão/cao.html">Cães</a>
+    <a href="/gato/gato.html">Gatos</a>
+    <a href="/aves/aves.html">Aves</a>
+    <a href="/coelho/coelho.html">Coelhos</a>
+  </nav>
+  <button class="navtoggle" id="navToggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="kicker">Petshop de bairro, cuidado de gente grande</p>
+      <h1>Cada bicho tem<br>sua toca.</h1>
+      <p class="hero-lead">Ração, banho, tosa e conversa de dono pra dono. Cuidamos de cães, gatos, aves e coelhos como se fossem nossos — porque, no fim das contas, já são.</p>
+      <div class="hero-actions">
+        <a href="#especies" class="btn btn-primary">Ver espécies</a>
+        <a href="#achar" class="btn btn-ghost">Não sei qual é o meu bicho</a>
+      </div>
+    </div>
+    <div class="hero-collage">
+      <img class="c1" src="/fotos/cao.png" alt="Cachorro golden retriever sorrindo">
+      <img class="c2" src="/fotos/gatoo.png" alt="Gato cinza deitado">
+      <img class="c3" src="/fotos/ave.png" alt="Ave colorida em close">
+      <img class="c4" src="/fotos/coelho.png" alt="Coelho branco e marrom">
+    </div>
+  </section>
+
+  <section class="especies" id="especies">
+    <h2>Escolha a espécie</h2>
+    <p class="secao-lead">Cada página tem dicas, produtos e uma ferramenta pensada pro seu bicho.</p>
+    <div class="grid-especies">
+      <a class="card card-cao" href="/cão/cao.html">
+        <img src="/fotos/cao2.png" alt="Cachorro">
+        <div class="card-body">
+          <h3>Cães</h3>
+          <p>Ração, calculadora de porção e dicas por porte.</p>
+        </div>
+      </a>
+      <a class="card card-gato" href="/gato/gato.html">
+        <img src="/fotos/gato2.png" alt="Gato filhote">
+        <div class="card-body">
+          <h3>Gatos</h3>
+          <p>Teste de personalidade felina e cuidados essenciais.</p>
+        </div>
+      </a>
+      <a class="card card-ave" href="/aves/aves.html">
+        <img src="/fotos/ave2.png" alt="Ave de estimação">
+        <div class="card-body">
+          <h3>Aves</h3>
+          <p>Guia de gaiola ideal para cada espécie.</p>
+        </div>
+      </a>
+      <a class="card card-coelho" href="/coelho/coelho.html">
+        <img src="/fotos/coelho2.png" alt="Coelho de estimação">
+        <div class="card-body">
+          <h3>Coelhos</h3>
+          <p>Cuidados que mudam do filhote ao coelho idoso.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="missao" id="missao">
+    <div class="missao-topo">
+      <p class="kicker kicker-claro">Quem somos</p>
+      <h2>Nossa missão</h2>
+      <p class="missao-texto">Aproximar quem ama animais de cuidado de verdade — com informação clara, produtos escolhidos a dedo e gente que entende de cão, gato, ave e coelho, não só de venda.</p>
+    </div>
+    <div class="valores-grid">
+      <div class="valor-item">
+        <span class="valor-numero">01</span>
+        <h3>Cuidado antes da venda</h3>
+        <p>Só recomendamos o que recomendaríamos para o nosso próprio bicho — mesmo que isso signifique vender menos.</p>
+      </div>
+      <div class="valor-item">
+        <span class="valor-numero">02</span>
+        <h3>Transparência</h3>
+        <p>Explicamos o porquê de cada indicação, do tipo de ração ao tamanho da gaiola, sem termo técnico sem explicação.</p>
+      </div>
+      <div class="valor-item">
+        <span class="valor-numero">03</span>
+        <h3>Respeito ao tempo do bicho</h3>
+        <p>Banho sem pressa, adaptação gradual a produtos novos e paciência com cada temperamento.</p>
+      </div>
+      <div class="valor-item">
+        <span class="valor-numero">04</span>
+        <h3>Comunidade de tutores</h3>
+        <p>Trocamos experiência com quem compra aqui — as melhores dicas do site vieram de clientes.</p>
+      </div>
+    </div>
+  </section>
+
+
+   <section class="achar" id="achar">
+  <div class="achar-intro">
+    <h2>Ainda não sabe qual bicho combina com você?</h2>
+    <p>Responda duas perguntas rápidas e a gente indica uma espécie pra você conhecer.</p>
+  </div>
+  
+  <div class="achar-quiz" id="quiz">
+    <!-- PASSO 1 -->
+    <div class="pergunta" data-step="1">
+      <p class="pergunta-texto">Onde você mora?</p>
+      <div class="opcoes">
+        <button type="button" data-valor="apartamento-pequeno">Apartamento pequeno</button>
+        <button type="button" data-valor="apartamento-grande">Apartamento grande</button>
+        <button type="button" data-valor="casa-quintal">Casa com quintal</button>
+      </div>
+    </div>
+
+    <!-- PASSO 2 -->
+    <div class="pergunta" data-step="2" hidden>
+      <p class="pergunta-texto">Quanto tempo livre você tem por dia para o seu bicho?</p>
+      <div class="opcoes">
+        <button type="button" data-valor="pouco">Menos de 30 minutos</button>
+        <button type="button" data-valor="medio">Cerca de 1 hora</button>
+        <button type="button" data-valor="muito">Mais de 2 horas</button>
+      </div>
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="resultado" id="resultado" hidden>
+      <p class="resultado-label">Nossa sugestão</p>
+      <h3 id="resultadoTitulo"></h3>
+      <p id="resultadoTexto"></p>
+      <a id="resultadoLink" class="btn btn-primary" href="#">Conhecer</a>
+      <button type="button" class="btn btn-ghost" id="refazer">Refazer teste</button>
+    </div>
+  </div>
+</section>
+
+  <section class="porque">
+    <h2>Por que a Toca &amp; Cia</h2>
+    <div class="porque-grid">
+      <div class="porque-item">
+        <h3>Quem atende, entende</h3>
+        <p>Nossa equipe cuida dos próprios bichos em casa — a recomendação vem de experiência, não de script.</p>
+      </div>
+      <div class="porque-item">
+        <h3>Estoque pensado por espécie</h3>
+        <p>Rações, petiscos e acessórios escolhidos para cães, gatos, aves e coelhos, sem sortimento genérico.</p>
+      </div>
+      <div class="porque-item">
+        <h3>Banho e tosa sem pressa</h3>
+        <p>Agenda espaçada para que cada bicho saia do banho calmo, não apressado.</p>
+      </div>
+    </div>
+  </section>
+
+      <aside class="ficha" aria-label="Ficha técnica do projeto">
+      <div class="ficha-topo">
+        <h3>Ficha Técnica</h3>
+        <span class="ficha-tag">Projeto Integrador V</span>
+      </div>
+
+      <dl class="ficha-lista">
+        <div>
+          <dt>Projeto</dt>
+          <dd>Missão 8 - Servidor Web Linux com Apache</dd>
+        </div>
+        <div>
+          <dt>Grupo 8</dt>
+          <dd>Ciência da Computação UNIFAGOC</dd>
+        </div>
+        <div class="ficha-full">
+          <dt>Integrantes</dt>
+          <dd>Gustavo Pereira, Inácio José, Luan Carlos, Lucas Luiz, Marcos Felipe, Matheus Gonçalves, Miguel Almeida</dd>
+        </div>
+        <div>
+          <dt>Servidor Web</dt>
+          <dd>Hostname: web01 | IP: 10.10.1.60/24 | DNS: web01.corp.local</dd>
+        </div>
+        <div>
+          <dt>Objetivo</dt>
+          <dd>Publicar a página institucional na rede corporativa com alta disponibilidade.</dd>
+        </div>
+        <div>
+          <dt>Infraestrutura</dt>
+          <dd>Rede 10.10.1.0/24 no Hyper-V (vSwitch-Interno). 10.10.1.5 | DNS Interno: 10.10.1.10.</dd>
+        </div>
+        <div>
+          <dt>Serviços no Ambiente</dt>
+          <dd>AD/DNS (Colmeia 2), RDS (3), Samba (4), Firewall (5), Proxy (6), DB (7).</dd>
+        </div>
+        <div class="ficha-full">
+          <dt>Configurações Técnicas</dt>
+          <dd>Debian 13, Apache 2.4.69, VirtualHost dedicado, UFW, Options -Indexes, ServerSignature Off.</dd>
+        </div>
+      </dl>
+    </aside>
+</main>
+
+<<footer class="rodape">
+  <div class="rodape-col">
+    <p class="brand-footer">Toca &amp; Cia</p>
+    <p>Rua das Acácias, 214 — Centro</p>
+    <p>Seg. a sáb., 9h às 19h</p>
+  </div>
+  <div class="rodape-col">
+    <p>Páginas</p>
+    <a href="/cão/cao.html">Cães</a>
+    <a href="/gato/gato.html">Gatos</a>
+    <a href="/aves/aves.html">Aves</a>
+    <a href="/coelho/coelho.html">Coelhos</a>
+  </div>
+  <div class="rodape-col">
+    <p>Fale com a gente</p>
+    <a href="#atendimento">Atendimento</a>
+    <a href="https://wa.me/5532988535697" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#missao">Nossa missão</a>
+  </div>
+</footer>
+<script src="/index.js" defer></script>
+</body>
+</html>
+

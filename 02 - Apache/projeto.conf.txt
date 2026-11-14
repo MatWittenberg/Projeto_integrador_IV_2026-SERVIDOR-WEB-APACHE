@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+    ServerName web01.corp.local
+    DocumentRoot /var/www/html/projeto_gx
+
+    <Directory /var/www/html/projeto_gx>
+        Options -Indexes +FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    ErrorLog /var/log/apache2/error.log
+    CustomLog /var/log/apache2/access.log combined
+</VirtualHost>
